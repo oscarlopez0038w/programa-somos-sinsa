@@ -1,0 +1,169 @@
+@font-face {
+    font-family: "Proxima Nova", sans-serif;
+    src: url(../tipografia/proximanova_regular.ttf);
+}
+
+html {
+    font-family: "Proxima Nova", sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+:root {
+    --imagen-fondo: url('../img/slogan.png');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('../img/fondo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.slogan-logo {
+    background-image: var(--imagen-fondo);
+    background-size: cover;
+    max-width: 350px;
+    max-height: 126px;
+    height: 126px;
+    background-repeat: no-repeat;
+    margin: 15px;
+    /* Otras propiedades de estilo */
+}
+
+.principal {
+    margin: 0 10%;
+}
+
+footer,
+.img-thumbnail {
+    background-color: #00000013;
+}
+
+.row {
+    justify-content: center;
+    align-items: center;
+    row-gap: 30px;
+}
+
+.breadcrumb {
+    padding-left: 25px;
+}
+
+.breadcrumb-item.active {
+    color: #f08a01;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    color: #41ab34;
+}
+
+.breadcrumb li a {
+    color: #f08a01;
+    text-decoration: none;
+}
+
+.titulo {
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+}
+
+.titulo h2 {
+    color: #f18a00;
+    font-size: 65px;
+}
+
+.titulo h1 {
+    color: #3dae2b;
+    font-size: 89px;
+}
+
+.titulo h4 {
+    color: white;
+    background-color: #f18a00;
+    display: inline;
+    font-size: 20px;
+    letter-spacing: 9px;
+}
+
+.titulo h3 {
+    color: #f18a00;
+    padding: 20px 0 8px 0;
+}
+
+.titulo p {
+    margin-top: 20px;
+    font-size: 24px;
+    color: #f18a00;
+}
+
+.contactos {
+    margin-top: 20px;
+}
+
+.contactos a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: background-color 0.3s, transform 0.3s;
+    background-color: #3dae2b;
+}
+
+.contactos a:hover {
+    background-color: #f18a00;
+    transform: translateY(-4px);
+}
+
+.detalles {
+    flex: 1;
+    text-align: center;
+}
+
+.detalles p {
+    margin-top: 10px;
+    font-size: 20px;
+
+}
+
+button {
+    border: none;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
+}
+
+button img {
+    width: 300px;
+    height: 200px !important;
+}
+
+.fs-3 {
+    color: #f18a00;
+}
+
+footer {
+    margin-top: 25px;
+    padding: 30px 0;
+}
+
+.img-thumbnail {
+    transition: transform 0.2s, box-shadow 0.2s; /* Transición suave de transformación y sombra */
+    transform-origin: center; /* Establece el origen de la transformación en el centro */
+  }
+
+  .img-thumbnail:hover {
+    transform: scale(1.02); /* Escala ligeramente el modal al pasar el mouse sobre él */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Agrega una suave sombra al modal */
+  }
