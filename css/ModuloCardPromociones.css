@@ -1,0 +1,43 @@
+.contenedorTabs {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 16px;
+}
+
+i {
+    color: #00693c;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+
+.tabPromocion img {
+    
+    width: 130px;
+    object-fit: contain;
+    
+}
+
+.tabPromocion p {
+    
+    color: #f08a01;
+    
+}
+
+.listadoTabs {
+    display: flex;
+    width: 100%;
+    gap: 20px;
+    justify-content: space-evenly;
+    overflow-x: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.tabPromocion {
+    text-align: center;
+    min-width: 100px;
+    max-width: 100px;
+    cursor: pointer;
+}
