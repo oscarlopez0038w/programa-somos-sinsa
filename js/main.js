@@ -62,13 +62,13 @@ function moverCategorias(direction) {
   scrollCompleted = 0;
   var slideVar = setInterval(function () {
       if (direction == 'left') {
-          container.scrollLeft -= 15;
+          container.scrollLeft -= 20;
       } else {
-          container.scrollLeft += 10;
+          container.scrollLeft += 20;
       }
-      scrollCompleted += 10;
+      scrollCompleted += 5;
       if (scrollCompleted >= 100) {
           window.clearInterval(slideVar);
       }
-  }, 50);
+  }, 25);
 }
