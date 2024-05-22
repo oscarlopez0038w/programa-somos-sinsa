@@ -14,9 +14,7 @@ html {
 
 }
 
-:root {
-    --imagen-fondo: url('../img/slogan.png');
-}
+
 
 * {
     margin: 0;
@@ -25,21 +23,21 @@ html {
 }
 
 body {
-    background-image: url('../img/fondo.jpg');
+    background-image: url('../img/fondo4.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
-
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
 .slogan-logo {
-    background-image: var(--imagen-fondo);
-    background-size: cover;
     max-width: 350px;
     max-height: 126px;
     height: 126px;
-    background-repeat: no-repeat;
-    margin: 15px;
-    /* Otras propiedades de estilo */
 }
 
 .principal {
@@ -75,32 +73,37 @@ footer,
 }
 
 .titulo {
-    margin: 0 auto;
-    width: 80%;
     text-align: center;
 }
 
 .titulo h2 {
     color: #f18a00;
-    font-size: 65px;
+    font-size: 50px;
+    margin:0;
+    font-weight: 600;
 }
 
 .titulo h1 {
     color: #3dae2b;
-    font-size: 89px;
+    font-size: 60px;
+    margin:0;
+    font-weight: 600;
 }
 
 .titulo h4 {
     color: white;
     background-color: #f18a00;
     display: inline;
-    font-size: 20px;
-    letter-spacing: 9px;
+    font-size: 22px;
+    padding:3px;
+    letter-spacing: 1px;
+    font-weight: 500;
 }
 
-.titulo h3 {
+main h3 {
+    text-align: center;
     color: #f18a00;
-    padding: 20px 0 8px 0;
+    padding: 25px 0 10px 0;;
 }
 
 .titulo p {
